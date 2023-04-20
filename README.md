@@ -1,2 +1,2 @@
 # WMS
-WMS Webpage
+Webpage's back-end
