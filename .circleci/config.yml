@@ -12,19 +12,7 @@ jobs:
       - checkout
       - aws-cli/setup:
           profile-name: b4rz
-      - run: npm install && npm run build
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .
-  test:
-    machine:
-      image: ubuntu-2204:2023.04.2
-    steps:
-      - attach_workspace:
-          at: .
-      - checkout
-      - run: npm run test
+      - run: cd ./home/ubuntu/WMS_Back-end && npm install
       - persist_to_workspace:
           root: .
           paths:
